@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <h1>My Store</h1>
+      <div class="search">
+        <input type="text" placeholder="Search for products..." id="search-box">
+        <select id="categ-list">
+          <option>All Categories</option>
+        </select>
+        <input type="number" id="min-price" placeholder="Min Price">
+        <input type="number" id="max-price" placeholder="Max Price">
+        <button id="apply-filter-btn">Apply Filter</button>
+      </div>
+      <div class="cart">
+        <h3>Shopping Cart</h3>
+        <div class="items-of-cart">
+          <ul class="items-list">
+
+          </ul>
+        </div>
+        <div>Total Quantity: <span class="total-quantity">0</span></div>
+        <div>Total Price: $<span class="total-price">0</span></div>
+      </div>
+    </div>
+    <div class="items">
+      <div class="show-items">
+        </div>
+      <div class="pages">
+        <button onclick="navigateTo(1)">1</button>
+        <button onclick="navigateTo(2)">2</button>
+        <button onclick="navigateTo(3)">3</button>
+        <button onclick="navigateTo(4)">4</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
